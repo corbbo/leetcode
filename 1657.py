@@ -23,3 +23,11 @@ def Counter(word):
         else:
             count[char] += 1
     return count
+
+if __name__ == "__main__":
+    print(closeStrings("abc", "bca")) # True
+    print(closeStrings("a", "aa")) # False
+    print(closeStrings("cabbba", "abbccc")) # True
+    print(closeStrings("cabbba", "aabbss")) # False
+    print(closeStrings("uau", "ssx")) # False
+    print(closeStrings("cabbba", "aabbss")) # False

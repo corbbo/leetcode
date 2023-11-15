@@ -9,3 +9,16 @@ def equalPairs(grid):
             if grid[i] == grid[j]:
                 count += 1
     return count
+
+if __name__ == "__main__":
+    print(equalPairs([[0,0,0],[0,1,0],[0,0,0]])) # 12
+    print(equalPairs([[1,0,0],[0,0,0],[0,0,0]])) # 8
+    print(equalPairs([[1,1,1],[1,1,1],[1,1,1]])) # 27
+    print(equalPairs([[1,0,0],[0,1,0],[0,0,1]])) # 6
+    print(equalPairs([[0,1,1],[1,0,1],[1,1,0]])) # 6
+    print(equalPairs([[0,1,1],[1,1,1],[1,1,0]])) # 9
+    print(equalPairs([[0,1,1],[1,1,1],[1,1,1]])) # 12
+    print(equalPairs([[0,0,0],[0,0,0],[0,0,0]])) # 27
+    print(equalPairs([[1,0,0],[0,1,0],[0,0,0]])) # 8
+    print(equalPairs([[1,1,1],[1,1,1],[1,1,1]])) # 27
+    print(equalPairs([[1,0,0],[0,0,0],[0,0,0]])) # 8

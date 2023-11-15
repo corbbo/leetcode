@@ -19,3 +19,13 @@ class Solution:
             else:
                 right -= 1
         return ops
+    
+if __name__ == '__main__':
+    solution = Solution()
+    print(solution.maxOperations([1,2,3,4], 5)) # 2
+    print(solution.maxOperations([3,1,3,4,3], 6)) # 1
+    print(solution.maxOperations([2,2,2,3,1,1,4,1], 4)) # 2
+    print(solution.maxOperations([5,1,3,4,7], 12)) # 3
+    print(solution.maxOperations([1,1,1,2,2,2,4,4], 5)) # 2
+    print(solution.maxOperations([1,1,1,2,2,2,4,4], 6)) # 3
+    print(solution.maxOperations([1,1,1,2,2,2,4,4], 7)) # 4
