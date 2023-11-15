@@ -2,7 +2,7 @@
 
 # A row and column pair is considered equal if they contain the same elements in the same order (i.e., an equal array).
 
-def equalPairs(grid):
+def equalPairs(grid): # wrong!
     count = 0
     for i in range(len(grid)):
         for j in range(len(grid)):

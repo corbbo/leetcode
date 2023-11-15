@@ -14,7 +14,7 @@ class Solution:
             for char in substring: 
                 if char in list_of_vowels: count += 1
                 list_of_counts.append(count)
-        return max(list_of_counts)
+        return max(list_of_counts) if list_of_counts else 0
     
 if __name__ == '__main__':
     solution = Solution()
@@ -26,6 +26,6 @@ if __name__ == '__main__':
     print(solution.maxVowels("tryhard", 5)) # 1
     print(solution.maxVowels("tryhard", 6)) # 1
     print(solution.maxVowels("tryhard", 7)) # 1
-    print(solution.maxVowels("tryhard", 8)) # 1
-    print(solution.maxVowels("tryhard", 9)) # 1
-    print(solution.maxVowels("tryhard", 10)) # 1
+    print(solution.maxVowels("tryhard", 8)) # 0
+    print(solution.maxVowels("tryhard", 9)) # 0
+    print(solution.maxVowels("tryhard", 10)) # 0
