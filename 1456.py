@@ -4,17 +4,16 @@
 
 class Solution:
     def maxVowels(self, s: str, k: int) -> int:
-        list_of_substrings = []
-        list_of_vowels = ['a', 'e', 'i', 'o', 'u']
-        list_of_counts = []
-        for i in range(len(s)-k+1):
-            list_of_substrings.append(s[i:i+k])
-        for substring in list_of_substrings:
-            count = 0
-            for char in substring: 
-                if char in list_of_vowels: count += 1
-                list_of_counts.append(count)
-        return max(list_of_counts) if list_of_counts else 0
+        list_of_vowels = set(['a', 'e', 'i', 'o', 'u'])
+        count = max_count = 0
+        for i in range(len(s)):
+            if i >= k:
+                if s[i-k] in list_of_vowels:
+                    count -= 1
+            if s[i] in list_of_vowels:
+                count += 1
+            max_count = max(max_count, count)
+        return max_count
     
 if __name__ == '__main__':
     solution = Solution()
